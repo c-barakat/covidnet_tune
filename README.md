@@ -11,7 +11,7 @@ The dataset train/test split was done as part of a [previous publication](https:
 
 # Model
 * COVID-Net can be obtained from the [COVID-Net repository](https://github.com/lindawangg/COVID-Net)
-* This repository will also include the last checkpoints from the trained models based on each of the best parameters provided by the 4 selected Ray Tune schedulers.
+* Due to storage restrictions, this repository will not include the trained models based on each of the best parameters provided by the 4 selected Ray Tune schedulers. Instead, [training_parameters.csv](training_parameters.csv) contains the parameters produced by each of the schedulers, and can be used to train the downloaded COVID-Net model.
 
 # Software, Packages, and versions
 ## Required for parallel execution
@@ -34,9 +34,8 @@ The dataset train/test split was done as part of a [previous publication](https:
 * simplejson==3.16.0
 
 # Repository Structure
-* [covidnet_outputs](covidnet_outputs/) contains the saved models after training, as well as the pretrained COVID-Net model.
+* [covidnet_outputs](covidnet_outputs/) will contain the saved models after training, as well as the pretrained COVID-Net model.
 * [data](data/) is subdivided into train and test subdirectories containing the images from the downloaded datasets.
 * [analyse_results.ipynb](analyse_results.ipynb) will export graphs to the [figures](figures/) directory.
 * [results](results/) contains the prediction outputs from running [testing.py](testing.py).
 * Further directories can or will need to be created when [Ray Tune is initialised](covidnet_on_fusion.py) or when [training_hvd.py](training_hvd.py) is run.
-

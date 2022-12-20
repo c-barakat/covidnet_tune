@@ -34,7 +34,7 @@ The dataset train/test split was done as part of a [previous publication](https:
 * simplejson==3.16.0
 
 # Repository Structure
-* [covidnet_outputs](covidnet_outputs/) will contain the saved models after training, as well as the pretrained COVID-Net model.
+* [covidnet_outputs](covidnet_outputs/) directory should be created to contain the saved models after training, as well as the pretrained COVID-Net model.
 * [data](data/) is subdivided into train and test subdirectories containing the images from the downloaded datasets.
 * [analyse_results.ipynb](analyse_results.ipynb) will export graphs to the [figures](figures/) directory.
 * [results](results/) contains the prediction outputs from running [testing.py](testing.py).
